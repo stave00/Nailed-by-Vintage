@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Nailed by Vintage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/gallery.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span>Nailed by Vintage</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://instagram.com/nailedby_vintage" class="social-link" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://facebook.com/nailedbyvintage" class="social-link" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="19" height="19"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- EDITORIAL HERO -->
+  <section class="gallery-hero">
+    <div class="gh-bg-strip"></div>
+    <div class="gh-content">
+      <p class="gh-eyebrow">✦ Our Portfolio</p>
+      <h1 class="gh-title">The <em>Gallery</em></h1>
+      <p class="gh-sub">333 posts. Countless masterpieces.<br/>Find your next look.</p>
+      <a href="https://instagram.com/nailedby_vintage" target="_blank" class="gh-ig-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        @nailedby_vintage
+      </a>
+    </div>
+    <div class="gh-photos">
+      <div class="ghp ghp-1">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMHKFr-8cT19BmVHIeT1kuDbqn-YkNO015fZJbe=w243-h406-n-k-no-nu" alt="Nail art"/>
+      </div>
+      <div class="ghp ghp-2">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMzWGUKjOgfseUD_ueaahpFBg_wU-1GhebEmLsU=w243-h406-n-k-no-nu" alt="Gel nails" style="filter:hue-rotate(330deg) saturate(1.2)"/>
+      </div>
+      <div class="ghp ghp-3">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMTZqFIOAmpx3jzvFH0JLuaLhxhqszXyJoqDZIA=w141-h141-n-k-no-nu" alt="Acrylic nails" style="filter:hue-rotate(15deg) brightness(1.05)"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER STRIP -->
+  <div class="filter-strip">
+    <div class="fs-scroll">
+      <button class="fpill active" data-filter="all">All Work</button>
+      <button class="fpill" data-filter="acrylic">Acrylics</button>
+      <button class="fpill" data-filter="gel">Gel Manicure</button>
+      <button class="fpill" data-filter="art">Nail Art</button>
+      <button class="fpill" data-filter="extensions">Extensions</button>
+      <button class="fpill" data-filter="polygel">Poly Gel</button>
+      <button class="fpill" data-filter="pedicure">Pedicure</button>
+    </div>
+    <div class="fs-count" id="fsCount">18 works</div>
+  </div>
+
+  <!-- PHOTO GRID -->
+  <section class="gallery-body">
+    <div class="gallery-wrap">
+      <div class="photo-grid" id="photoGrid">
+
+        <div class="gi" data-cat="art" data-title="Floral Chrome Art" data-desc="Hand-detailed floral chrome — the Nailed by Vintage signature look" data-span="wide">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&h=560&fit=crop&auto=format&q=85" alt="Floral chrome nail art" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Nail Art</span>
+            <p class="gi-name">Floral Chrome Art</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="acrylic" data-title="Nude Almond Acrylics" data-desc="Sculpted almond set in warm nude — timeless, elegant, perfect for every occasion">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPPpU14qU1hLVqpPmTJmdPkSRriZ38zF7KqP7WM=w243-h406-n-k-no-nu" alt="Nude almond acrylics" loading="lazy" style="filter:saturate(0.5) brightness(1.15)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Acrylic</span>
+            <p class="gi-name">Nude Almond Acrylics</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="gel" data-title="Cherry Gel Manicure" data-desc="Rich glossy cherry red gel that stays chip-free for 3+ weeks">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipP7oxjL7P6QXaCEfKGIEij_oUlVGVynayrYpA_n=s680-w680-h510-rw" alt="Cherry gel manicure" loading="lazy" style="filter:hue-rotate(340deg) saturate(1.8) brightness(0.9)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Gel</span>
+            <p class="gi-name">Cherry Gel Manicure</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="art" data-title="3D Gem Nail Art" data-desc="Swarovski gem placement on sculpted acrylics — true luxury in every detail" data-span="tall">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO4Gkx6vlLTVz3niQTCOuKyxZNP0tW4m5qlrewv=w243-h244-n-k-no-nu" alt="3D gem nail art" loading="lazy" style="filter:hue-rotate(330deg) saturate(1.3)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Nail Art</span>
+            <p class="gi-name">3D Gem Art</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="extensions" data-title="Coffin Extensions" data-desc="Long coffin extensions with a flawless blush ombre — runway-ready">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOat_A7aLO3djCzfikrfjZEB0-FL5GeuaUjWXhG=w243-h406-n-k-no-nu" alt="Coffin extensions" loading="lazy" style="filter:hue-rotate(340deg) saturate(0.7) brightness(1.1)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Extensions</span>
+            <p class="gi-name">Coffin Extensions</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="polygel" data-title="Natural Poly Gel Set" data-desc="Featherlight poly gel with sheer pink builder finish — no bulk, all beauty">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=520&h=520&fit=crop&auto=format&q=85" alt="Poly gel natural" loading="lazy" style="filter:hue-rotate(340deg) saturate(0.5) brightness(1.2)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Poly Gel</span>
+            <p class="gi-name">Natural Poly Gel</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="pedicure" data-title="Luxury Spa Pedicure" data-desc="Full spa pedicure with gel finish — feet you'll want to show off all season" data-span="wide">
+          <img src="https://images.unsplash.com/photo-1675159364629-6bd6d3e84c80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fEx1eHVyeSUyMFNwYSUyMFBlZGljdXJlfGVufDB8fDB8fHww" alt="Luxury pedicure" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Pedicure</span>
+            <p class="gi-name">Luxury Spa Pedicure</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="acrylic" data-title="Stiletto Chrome Acrylic" data-desc="Dramatic ultra-long stiletto with mirror chrome powder — unapologetically bold" data-span="tall">
+          <img src="https://plus.unsplash.com/premium_photo-1717529138354-59cb91e9caef?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Stiletto chrome" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Acrylic</span>
+            <p class="gi-name">Stiletto Chrome</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="art" data-title="Marble Gold Veins" data-desc="White marble base with real gold foil veining — wearable luxury">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOfFV9iIgy4cWenHfbxHtnF6pgAL9LdmJbTYjpo=s680-w680-h510-rw" alt="Marble nail art" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Nail Art</span>
+            <p class="gi-name">Marble Gold Veins</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="gel" data-title="French Ombré Gel" data-desc="Modern soft-pink-to-white ombré French gel — a Nailed by Vintage signature staple">
+          <img src="https://images.unsplash.com/photo-1772322586785-3a34772cbc61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RnJlbmNoJTIwT21iciVDMyVBOSUyMEdlbHxlbnwwfHwwfHx8MA%3D%3D" alt="French ombre gel" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Gel</span>
+            <p class="gi-name">French Ombré Gel</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="art" data-title="Glitter Ombré Art" data-desc="Rose-to-gold glitter fade — the ultimate party starter set">
+          <img src="https://images.unsplash.com/photo-1684609365994-a144ee021c88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8R2xpdHRlciUyME9tYnIlQzMlQTklMjBuYWlsJTIwQXJ0fGVufDB8fDB8fHww" alt="Glitter ombre nails" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Nail Art</span>
+            <p class="gi-name">Glitter Ombré Art</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="extensions" data-title="Square Tip Extensions" data-desc="Classic square tip extensions in clean white — polished, professional, pristine">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=520&h=520&fit=crop&auto=format&q=85" alt="Square extensions" loading="lazy" style="filter:brightness(1.25) saturate(0.25)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Extensions</span>
+            <p class="gi-name">Square Tip Extensions</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="gel" data-title="Berry Plum Gel" data-desc="Deep berry plum gel — moody, rich, and completely irresistible on every skin tone" data-span="tall">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMUkxT5-2HMKoNYQGRZCePb1mZIlekPR4Os3eiV=s680-w680-h510-rw" alt="Berry plum gel" loading="lazy"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Gel</span>
+            <p class="gi-name">Berry Plum Gel</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="polygel" data-title="Poly Gel Overlay" data-desc="Slim lightweight poly gel over natural nails — strength without the bulk">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPPpU14qU1hLVqpPmTJmdPkSRriZ38zF7KqP7WM=w243-h406-n-k-no-nu" alt="Poly gel overlay" loading="lazy" style="filter:hue-rotate(15deg) brightness(1.1)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Poly Gel</span>
+            <p class="gi-name">Poly Gel Overlay</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="pedicure" data-title="Coral Gel Pedicure" data-desc="Vibrant coral gel pedicure paired with full spa exfoliation treatment">
+          <img src="https://media.istockphoto.com/id/2154490518/photo/foot-massage-in-a-spa-salon-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=OgTPQXsWsAHifsVenW--IGQOQkzgKF3Qf5TDEoXkJkk=" alt="Coral pedicure" loading="lazy" style="filter:hue-rotate(10deg) saturate(1.5)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Pedicure</span>
+            <p class="gi-name">Coral Gel Pedicure</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="acrylic" data-title="Blush Gem Acrylics" data-desc="Blush pink acrylics adorned with hand-placed crystals — feminine and fierce" data-span="wide">
+          <img src="https://media.istockphoto.com/id/481208838/photo/bride-fashionable-manicure.webp?a=1&b=1&s=612x612&w=0&k=20&c=tby_tYNZBP0pde1zf3z8hLQ0MA7rrs8xocZx7gwoI_A=" alt="Blush gem acrylics" loading="lazy" style="filter:hue-rotate(340deg) saturate(0.9) brightness(1.1)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Acrylic</span>
+            <p class="gi-name">Blush Gem Acrylics</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="art" data-title="Abstract Line Art" data-desc="Minimalist fine-line black art on a nude base — clean, editorial, unforgettable">
+          <img src="https://images.unsplash.com/photo-1754951661104-2a13d50d4741?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWJzdHJhY3QlMjBuYWlsJTIwTGluZSUyMEFydHxlbnwwfHwwfHx8MA%3D%3D" alt="Abstract line nail art" loading="lazy" style="filter:grayscale(0.6) contrast(1.2)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Nail Art</span>
+            <p class="gi-name">Abstract Line Art</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gi" data-cat="acrylic" data-title="Black Matte Coffin" data-desc="Sleek matte black coffin acrylics — bold, fierce, and always statement-ready">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=520&h=520&fit=crop&auto=format&q=85" alt="Black matte coffin" loading="lazy" style="filter:grayscale(0.9) contrast(1.5) brightness(0.65)"/>
+          <div class="gi-overlay">
+            <span class="gi-tag">Acrylic</span>
+            <p class="gi-name">Black Matte Coffin</p>
+            <button class="gi-zoom-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /photo-grid -->
+    </div>
+  </section>
+
+  <!-- INSTAGRAM STRIP -->
+  <section class="ig-strip">
+    <div class="container">
+      <div class="ig-strip-inner">
+        <div class="ig-strip-left">
+          <div class="ig-badge">
+            <div class="ig-badge-ring"></div>
+            <div class="ig-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </div>
+          </div>
+          <div>
+            <strong class="ig-handle">@nailedby_vintage</strong>
+            <span class="ig-stats">333 posts · 3,323 followers</span>
+          </div>
+        </div>
+        <p class="ig-strip-msg">See our full portfolio — new work every week on Instagram</p>
+        <div class="ig-strip-btns">
+          <a href="https://instagram.com/nailedby_vintage" target="_blank" class="btn btn-primary">Follow on Instagram</a>
+          <a href="https://wa.me/2349135422262" target="_blank" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.979-1.306A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            Book a Look
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lb-backdrop" id="lbBackdrop">
+    <button class="lb-x" id="lbClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lb-card">
+      <div class="lb-img-wrap">
+        <img id="lbImg" src="" alt="" class="lb-photo"/>
+      </div>
+      <div class="lb-info">
+        <div class="lb-info-top">
+          <span class="lb-pill" id="lbTag">Nail Art</span>
+          <span class="lb-num" id="lbNum">1 / 18</span>
+        </div>
+        <h3 class="lb-title" id="lbTitle">Title</h3>
+        <p class="lb-desc" id="lbDesc">Description</p>
+        <div class="lb-ctas">
+          <a href="https://wa.me/2349135422262" target="_blank" class="btn btn-primary">Book This Look</a>
+          <a href="https://instagram.com/nailedby_vintage" target="_blank" class="btn btn-secondary">See More on Instagram</a>
+        </div>
+        <div class="lb-brand">✦ Nailed by Vintage</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">✦ Nailed by Vintage</a>
+        <p>Luxury Nails, Timeless Beauty.<br/>Brooklyn Estate, Benin City.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/nailedby_vintage" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://facebook.com/nailedbyvintage" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/2349135422262" target="_blank" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.979-1.306A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>📍 Brooklyn Estate, Off Sapele Road, Benin City</p>
+        <p>📞 <a href="tel:09135422262">0913 542 2262</a></p>
+        <a href="https://wa.me/2349135422262" class="footer-wa-btn" target="_blank">Book on WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Nailed by Vintage. All rights reserved. Crafted with ♥</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2349135422262" class="float-wa" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.979-1.306A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+    <span class="float-wa-pulse"></span>
+  </a>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
